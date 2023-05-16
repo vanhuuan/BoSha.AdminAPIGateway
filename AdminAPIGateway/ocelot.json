@@ -1,0 +1,1034 @@
+{
+  "Routes": [
+    // Authen service
+    {
+      "UpstreamPathTemplate": "/Authen/SignIn",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamScheme": "http",
+      "SwaggerKey": "authen",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "10.104.0.2",
+          "Port": 81
+        }
+      ],
+      "DownstreamPathTemplate": "/Authen/SignIn"
+    },
+    {
+      "UpstreamPathTemplate": "/Authen/SignInGoogle",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamScheme": "http",
+      "SwaggerKey": "authen",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "10.104.0.2",
+          "Port": 81
+        }
+      ],
+      "DownstreamPathTemplate": "/Authen/SignInGoogle"
+    },
+    {
+      "UpstreamPathTemplate": "/Authen/SignUp",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamScheme": "http",
+      "SwaggerKey": "authen",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "10.104.0.2",
+          "Port": 81
+        }
+      ],
+      "DownstreamPathTemplate": "/Authen/SignUp/{everything}"
+    },
+    {
+      "UpstreamPathTemplate": "/Authen/SignUpGoogle",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamScheme": "http",
+      "SwaggerKey": "authen",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "10.104.0.2",
+          "Port": 81
+        }
+      ],
+      "DownstreamPathTemplate": "/Authen/SignUpGoogle"
+    },
+    {
+      "UpstreamPathTemplate": "/Authen/Active?{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "http",
+      "SwaggerKey": "authen",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "10.104.0.2",
+          "Port": 81
+        }
+      ],
+      "DownstreamPathTemplate": "/Authen/Active?{everything}"
+    },
+    {
+      "UpstreamPathTemplate": "/Authen/ForgetPass?{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "http",
+      "SwaggerKey": "authen",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "10.104.0.2",
+          "Port": 81
+        }
+      ],
+      "DownstreamPathTemplate": "/Authen/ForgetPass?{everything}"
+    },
+    {
+      "UpstreamPathTemplate": "/Authen/RenewPassword",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamScheme": "http",
+      "SwaggerKey": "authen",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "10.104.0.2",
+          "Port": 81
+        }
+      ],
+      "DownstreamPathTemplate": "/Authen/RenewPassword"
+    },
+    {
+      "UpstreamPathTemplate": "/GetUserInfo",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "http",
+      "SwaggerKey": "authen",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "10.104.0.2",
+          "Port": 81
+        }
+      ],
+      "DownstreamPathTemplate": "/GetUserInfo",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "User": "User"
+      },
+      "AddHeadersToRequest": {
+        "Uid": "Claims[UId] > value"
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/UpdateInfo",
+      "UpstreamHttpMethod": [ "PUT" ],
+      "DownstreamScheme": "http",
+      "SwaggerKey": "authen",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "10.104.0.2",
+          "Port": 81
+        }
+      ],
+      "DownstreamPathTemplate": "/UpdateInfo",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "User": "User"
+      },
+      "AddHeadersToRequest": {
+        "Uid": "Claims[UId] > value"
+      }
+    },
+    // Buy Book service
+    {
+      "UpstreamPathTemplate": "/Book/BuyBook",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamScheme": "http",
+      "SwaggerKey": "BookService",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "10.104.0.2",
+          "Port": 85
+        }
+      ],
+      "DownstreamPathTemplate": "/Book/BuyBook",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "User": "User"
+      },
+      "AddHeadersToRequest": {
+        "Uid": "Claims[UId] > value"
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/Book/BuyBookConfirm?{everything}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamScheme": "http",
+      "SwaggerKey": "BookService",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "10.104.0.2",
+          "Port": 85
+        }
+      ],
+      "DownstreamPathTemplate": "/Book/BuyBookConfirm?{everything}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "User": "User"
+      },
+      "AddHeadersToRequest": {
+        "Uid": "Claims[UId] > value"
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/Book/BuyBookCancel?{everything}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamScheme": "http",
+      "SwaggerKey": "BookService",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "10.104.0.2",
+          "Port": 85
+        }
+      ],
+      "DownstreamPathTemplate": "/Book/BuyBookCancel?{everything}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "User": "User"
+      },
+      "AddHeadersToRequest": {
+        "Uid": "Claims[UId] > value"
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/Book/GetBuyBookPaging?{everything}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamScheme": "http",
+      "SwaggerKey": "BookService",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "10.104.0.2",
+          "Port": 85
+        }
+      ],
+      "DownstreamPathTemplate": "/Book/GetBuyBookPaging?{everything}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "User": "User"
+      },
+      "AddHeadersToRequest": {
+        "Uid": "Claims[UId] > value"
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/Book/GetCheckOut?{everything}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamScheme": "http",
+      "SwaggerKey": "BookService",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "10.104.0.2",
+          "Port": 85
+        }
+      ],
+      "DownstreamPathTemplate": "/Book/GetCheckOut?{everything}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "User": "User"
+      },
+      "AddHeadersToRequest": {
+        "Uid": "Claims[UId] > value"
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/IPN?{everything}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamScheme": "http",
+      "SwaggerKey": "BookService",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "10.104.0.2",
+          "Port": 85
+        }
+      ],
+      "DownstreamPathTemplate": "/IPN?{everything}"
+    },
+    {
+      "UpstreamPathTemplate": "/Book/GetBuyBookStatus?{everything}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamScheme": "http",
+      "SwaggerKey": "BookService",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "10.104.0.2",
+          "Port": 85
+        }
+      ],
+      "DownstreamPathTemplate": "/Book/GetBuyBookStatus?{everything}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "User": "User"
+      },
+      "AddHeadersToRequest": {
+        "Uid": "Claims[UId] > value"
+      }
+    },
+    // Favourite
+    {
+      "UpstreamPathTemplate": "/Book/LikeBook?{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "http",
+      "SwaggerKey": "BookService",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "10.104.0.2",
+          "Port": 85
+        }
+      ],
+      "DownstreamPathTemplate": "/Book/LikeBook?{everything}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "User": "User"
+      },
+      "AddHeadersToRequest": {
+        "Uid": "Claims[UId] > value"
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/Book/GetLikeBook?{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "http",
+      "SwaggerKey": "BookService",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "10.104.0.2",
+          "Port": 85
+        }
+      ],
+      "DownstreamPathTemplate": "/Book/GetLikeBook?{everything}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "User": "User"
+      },
+      "AddHeadersToRequest": {
+        "Uid": "Claims[UId] > value"
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/CreateOrder",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamScheme": "https",
+      "SwaggerKey": "userorder",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "takefood-userorderservice.azurewebsites.net",
+          "Port": 443
+        }
+      ],
+      "DownstreamPathTemplate": "/CreateOrder",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "User": "User"
+      },
+      "AddHeadersToRequest": {
+        "Uid": "Claims[UId] > value"
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/GetVoucher?{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "https",
+      "SwaggerKey": "voucher",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "takefood-voucherservice.azurewebsites.net",
+          "Port": 443
+        }
+      ],
+      "DownstreamPathTemplate": "/GetVoucher?{everything}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "User": "User"
+      },
+      "AddHeadersToRequest": {
+        "Uid": "Claims[UId] > value"
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/GetOrderdetail?{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "https",
+      "SwaggerKey": "userorder",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "takefood-userorderservice.azurewebsites.net",
+          "Port": 443
+        }
+      ],
+      "DownstreamPathTemplate": "/GetOrderdetail?{everything}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "User": "User"
+      },
+      "AddHeadersToRequest": {
+        "Uid": "Claims[UId] > value"
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/GetOrders?{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "https",
+      "SwaggerKey": "userorder",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "takefood-userorderservice.azurewebsites.net",
+          "Port": 443
+        }
+      ],
+      "DownstreamPathTemplate": "/GetOrders?{everything}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "User": "User"
+      },
+      "AddHeadersToRequest": {
+        "Uid": "Claims[UId] > value"
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/Food/GetFoodViewMobile?{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "https",
+      "SwaggerKey": "store",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "takefood-storeservice.azurewebsites.net",
+          "Port": 443
+        }
+      ],
+      "DownstreamPathTemplate": "/api/Food/GetFoodViewMobile?{everything}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "User": "User"
+      },
+      "AddHeadersToRequest": {
+        "Uid": "Claims[UId] > value"
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/GetAddress",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "https",
+      "SwaggerKey": "authen",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "takefood-authentication.azurewebsites.net",
+          "Port": 443
+        }
+      ],
+      "DownstreamPathTemplate": "/GetAddress",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "User": "User"
+      },
+      "AddHeadersToRequest": {
+        "Uid": "Claims[UId] > value"
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/Authen/GetAccessToken?{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "http",
+      "SwaggerKey": "authen",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "10.104.0.2",
+          "Port": 81
+        }
+      ],
+      "DownstreamPathTemplate": "/Authen/GetAccessToken?{everything}"
+    },
+    //Review
+    {
+      "UpstreamPathTemplate": "/Book/Review",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamScheme": "http",
+      "SwaggerKey": "review",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "10.104.0.2",
+          "Port": 85
+        }
+      ],
+      "DownstreamPathTemplate": "/Book/Review",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "User": "User"
+      },
+      "AddHeadersToRequest": {
+        "Uid": "Claims[UId] > value"
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/Book/Review?{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "http",
+      "SwaggerKey": "BookService",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "10.104.0.2",
+          "Port": 85
+        }
+      ],
+      "DownstreamPathTemplate": "/Book/Review?{everything}"
+    },
+    {
+      "UpstreamPathTemplate": "/Review/GetUserReview?{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "http",
+      "SwaggerKey": "UserBook",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "10.104.0.2",
+          "Port": 83
+        }
+      ],
+      "DownstreamPathTemplate": "/Review/GetUserReview?{everything}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "User": "User"
+      },
+      "AddHeadersToRequest": {
+        "Uid": "Claims[UId] > value"
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/Comment/GetUserComment?{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "http",
+      "SwaggerKey": "UserBook",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "10.104.0.2",
+          "Port": 83
+        }
+      ],
+      "DownstreamPathTemplate": "/Comment/GetUserComment?{everything}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "User": "User"
+      },
+      "AddHeadersToRequest": {
+        "Uid": "Claims[UId] > value"
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/Book/Comment?{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "http",
+      "SwaggerKey": "BookService",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "10.104.0.2",
+          "Port": 85
+        }
+      ],
+      "DownstreamPathTemplate": "/Book/Comment?{everything}"
+    },
+    {
+      "UpstreamPathTemplate": "/Book/Comment",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamScheme": "http",
+      "SwaggerKey": "BookService",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "10.104.0.2",
+          "Port": 85
+        }
+      ],
+      "DownstreamPathTemplate": "/Book/Comment",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "User": "User"
+      },
+      "AddHeadersToRequest": {
+        "Uid": "Claims[UId] > value"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/notifysocket/negotiate",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "takefood-userorderservice.azurewebsites.net",
+          "Port": 443
+        }
+      ],
+      "UpstreamHttpMethod": [ "POST" ],
+      "UpstreamPathTemplate": "/notifysocket/negotiate",
+      "ReRouteIsCaseSensitive": false
+    },
+    {
+      "DownstreamPathTemplate": "/notifysocket",
+      "ReRouteIsCaseSensitive": false,
+      "DownstreamScheme": "wss",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "takefood-userorderservice.azurewebsites.net",
+          "Port": 443
+        }
+      ],
+      "UpstreamPathTemplate": "/notifysocket",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE", "OPTIONS" ]
+    },
+    {
+      "UpstreamPathTemplate": "/NotifyPay?{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "http",
+      "SwaggerKey": "UserBook",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "10.104.0.2",
+          "Port": 83
+        }
+      ],
+      "DownstreamPathTemplate": "/NotifyPay?{everything}"
+    },
+    {
+      "UpstreamPathTemplate": "/NotifyCancel?{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "http",
+      "SwaggerKey": "UserBook",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "10.104.0.2",
+          "Port": 83
+        }
+      ],
+      "DownstreamPathTemplate": "/NotifyCancel?{everything}"
+    },
+    {
+      "UpstreamPathTemplate": "/Book/BuyBook/Webhook/PayPal",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamScheme": "http",
+      "SwaggerKey": "BookService",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "10.104.0.2",
+          "Port": 85
+        }
+      ],
+      "DownstreamPathTemplate": "/Book/BuyBook/Webhook/PayPal"
+    },
+    {
+      "UpstreamPathTemplate": "/Book/AddBook",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamScheme": "http",
+      "SwaggerKey": "UserBook",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "10.104.0.2",
+          "Port": 83
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "User": "User"
+      },
+      "AddHeadersToRequest": {
+        "Uid": "Claims[UId] > value"
+      },
+      "DownstreamPathTemplate": "/Book/AddBook"
+    },
+    {
+      "UpstreamPathTemplate": "/Book/UpdateBook",
+      "UpstreamHttpMethod": [ "PUT" ],
+      "DownstreamScheme": "http",
+      "SwaggerKey": "UserBook",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "10.104.0.2",
+          "Port": 83
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "User": "User"
+      },
+      "AddHeadersToRequest": {
+        "Uid": "Claims[UId] > value"
+      },
+      "DownstreamPathTemplate": "/Book/UpdateBook"
+    },
+    {
+      "UpstreamPathTemplate": "/Book/GetUserBook?{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "http",
+      "SwaggerKey": "UserBook",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "10.104.0.2",
+          "Port": 83
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "User": "User"
+      },
+      "AddHeadersToRequest": {
+        "Uid": "Claims[UId] > value"
+      },
+      "DownstreamPathTemplate": "/Book/GetUserBook?{everything}"
+    },
+    {
+      "UpstreamPathTemplate": "/Book?{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "http",
+      "SwaggerKey": "BookService",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "10.104.0.2",
+          "Port": 85
+        }
+      ],
+      "DownstreamPathTemplate": "/Book?{everything}"
+    },
+    {
+      "UpstreamPathTemplate": "/Books?{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "http",
+      "SwaggerKey": "BookService",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "10.104.0.2",
+          "Port": 85
+        }
+      ],
+      "DownstreamPathTemplate": "/Books?{everything}"
+    },
+    {
+      "UpstreamPathTemplate": "/categories",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "http",
+      "SwaggerKey": "UserBook",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "10.104.0.2",
+          "Port": 83
+        }
+      ],
+      "DownstreamPathTemplate": "/categories"
+    },
+    {
+      "UpstreamPathTemplate": "/Chapter/Chapters?{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "http",
+      "SwaggerKey": "UserBook",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "10.104.0.2",
+          "Port": 83
+        }
+      ],
+      "DownstreamPathTemplate": "/Chapter/Chapters?{everything}"
+    },
+    {
+      "UpstreamPathTemplate": "/Chapter/ChapterDetail?{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "http",
+      "SwaggerKey": "UserBook",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "10.104.0.2",
+          "Port": 83
+        }
+      ],
+      "DownstreamPathTemplate": "/Chapter/ChapterDetail?{everything}"
+    },
+    {
+      "UpstreamPathTemplate": "/Chapter/AddChapter",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamScheme": "http",
+      "SwaggerKey": "UserBook",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "10.104.0.2",
+          "Port": 83
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "User": "User"
+      },
+      "AddHeadersToRequest": {
+        "Uid": "Claims[UId] > value"
+      },
+      "DownstreamPathTemplate": "/Chapter/AddChapter"
+    },
+    {
+      "UpstreamPathTemplate": "/Chapter/UpdateChapter",
+      "UpstreamHttpMethod": [ "PUT" ],
+      "DownstreamScheme": "http",
+      "SwaggerKey": "UserBook",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "10.104.0.2",
+          "Port": 83
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "User": "User"
+      },
+      "AddHeadersToRequest": {
+        "Uid": "Claims[UId] > value"
+      },
+      "DownstreamPathTemplate": "/Chapter/UpdateChapter"
+    },
+
+    {
+      "UpstreamPathTemplate": "/Chapter/GetNextIndex?{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "http",
+      "SwaggerKey": "UserBook",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "10.104.0.2",
+          "Port": 83
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "User": "User"
+      },
+      "AddHeadersToRequest": {
+        "Uid": "Claims[UId] > value"
+      },
+      "DownstreamPathTemplate": "/Chapter/GetNextIndex?{everything}"
+    },
+    {
+      "UpstreamPathTemplate": "/Book/Status",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "http",
+      "SwaggerKey": "UserBook",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "10.104.0.2",
+          "Port": 83
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "User": "User"
+      },
+      "AddHeadersToRequest": {
+        "Uid": "Claims[UId] > value"
+      },
+      "DownstreamPathTemplate": "/Book/Status"
+    },
+    // Statistic
+    {
+      "UpstreamPathTemplate": "/Statistic/GetStatisticCards?{everything}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamScheme": "http",
+      "SwaggerKey": "BookService",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "10.104.0.2",
+          "Port": 83
+        }
+      ],
+      "DownstreamPathTemplate": "/Statistic/GetStatisticCards?{everything}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "User": "User"
+      },
+      "AddHeadersToRequest": {
+        "Uid": "Claims[UId] > value"
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/Statistic/GetStatisticChart?{everything}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamScheme": "http",
+      "SwaggerKey": "BookService",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "10.104.0.2",
+          "Port": 83
+        }
+      ],
+      "DownstreamPathTemplate": "/Statistic/GetStatisticChart?{everything}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "User": "User"
+      },
+      "AddHeadersToRequest": {
+        "Uid": "Claims[UId] > value"
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/Statistic/GetStatisticData?{everything}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamScheme": "http",
+      "SwaggerKey": "BookService",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "10.104.0.2",
+          "Port": 83
+        }
+      ],
+      "DownstreamPathTemplate": "/Statistic/GetStatisticData?{everything}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "User": "User"
+      },
+      "AddHeadersToRequest": {
+        "Uid": "Claims[UId] > value"
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/Statistic/GetStatisticRevenueYear?{everything}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamScheme": "http",
+      "SwaggerKey": "BookService",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "10.104.0.2",
+          "Port": 83
+        }
+      ],
+      "DownstreamPathTemplate": "/Statistic/GetStatisticRevenueYear?{everything}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "User": "User"
+      },
+      "AddHeadersToRequest": {
+        "Uid": "Claims[UId] > value"
+      }
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://10.104.0.2:7239"
+  },
+  "SwaggerEndPoints": [
+    {
+      "Key": "authen",
+      "TransformByOcelotConfig": false,
+      "Config": [
+        {
+          "Name": "BoSha.AuthenticationService",
+          "Version": "1.0",
+          "Url": "http://10.104.0.2:81/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "Book",
+      "TransformByOcelotConfig": false,
+      "Config": [
+        {
+          "Name": "BoSHa.BookService",
+          "Version": "1.0",
+          "Url": "http://10.104.0.2:85/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "UserBook",
+      "TransformByOcelotConfig": false,
+      "Config": [
+        {
+          "Name": "BoSha.UserBookService",
+          "Version": "1.0",
+          "Url": "http://10.104.0.2:83/swagger/v1/swagger.json"
+        }
+      ]
+    }
+  ]
+}
