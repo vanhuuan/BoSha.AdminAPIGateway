@@ -146,8 +146,8 @@
       "SwaggerKey": "authen",
       "DownstreamHostAndPorts": [
         {
-          "Host": "takefood-authentication.azurewebsites.net",
-          "Port": 443
+          "Host": "10.104.0.2",
+          "Port": 81
         }
       ],
       "DownstreamPathTemplate": "/GetPagingAdmin?{everything}",
@@ -169,8 +169,8 @@
       "SwaggerKey": "authen",
       "DownstreamHostAndPorts": [
         {
-          "Host": "takefood-authentication.azurewebsites.net",
-          "Port": 443
+          "Host": "10.104.0.2",
+          "Port": 81
         }
       ],
       "DownstreamPathTemplate": "/MakeAdmin?{everything}",
@@ -192,8 +192,8 @@
       "SwaggerKey": "authen",
       "DownstreamHostAndPorts": [
         {
-          "Host": "takefood-authentication.azurewebsites.net",
-          "Port": 443
+          "Host": "10.104.0.2",
+          "Port": 81
         }
       ],
       "DownstreamPathTemplate": "/RemoveAdmin?{everything}",
@@ -208,9 +208,7 @@
         "Uid": "Claims[UId] > value"
       }
     },
-    "/",
-    "user",
-    "service",
+    //user service
     {
       "UpstreamPathTemplate": "/GetPagingUser?{everything}",
       "UpstreamHttpMethod": [ "GET" ],
@@ -218,11 +216,80 @@
       "SwaggerKey": "authen",
       "DownstreamHostAndPorts": [
         {
-          "Host": "takefood-authentication.azurewebsites.net",
-          "Port": 443
+          "Host": "10.104.0.2",
+          "Port": 81
         }
       ],
       "DownstreamPathTemplate": "/GetPagingUser?{everything}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "Admin": "Admin"
+      },
+      "AddHeadersToRequest": {
+        "Uid": "Claims[UId] > value"
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/ChangeUserStatus?{everything}",
+      "UpstreamHttpMethod": [ "PUT" ],
+      "DownstreamScheme": "https",
+      "SwaggerKey": "authen",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "10.104.0.2",
+          "Port": 81
+        }
+      ],
+      "DownstreamPathTemplate": "/ChangeUserStatus?{everything}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "Admin": "Admin"
+      },
+      "AddHeadersToRequest": {
+        "Uid": "Claims[UId] > value"
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/DeleteUser?{everything}",
+      "UpstreamHttpMethod": [ "DELETE" ],
+      "DownstreamScheme": "https",
+      "SwaggerKey": "authen",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "10.104.0.2",
+          "Port": 81
+        }
+      ],
+      "DownstreamPathTemplate": "/DeleteUser?{everything}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "Admin": "Admin"
+      },
+      "AddHeadersToRequest": {
+        "Uid": "Claims[UId] > value"
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/GetNewsUser",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "https",
+      "SwaggerKey": "authen",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "10.104.0.2",
+          "Port": 81
+        }
+      ],
+      "DownstreamPathTemplate": "/GetNewsUser",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": []
@@ -441,7 +508,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "takefood-userorderservice.azurewebsites.net",
-          "Port": 443
+          "Port": 81
         }
       ],
       "DownstreamPathTemplate": "/CreateOrder",
@@ -464,7 +531,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "takefood-voucherservice.azurewebsites.net",
-          "Port": 443
+          "Port": 81
         }
       ],
       "DownstreamPathTemplate": "/GetVoucher?{everything}",
@@ -487,7 +554,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "takefood-userorderservice.azurewebsites.net",
-          "Port": 443
+          "Port": 81
         }
       ],
       "DownstreamPathTemplate": "/GetOrderdetail?{everything}",
@@ -510,7 +577,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "takefood-userorderservice.azurewebsites.net",
-          "Port": 443
+          "Port": 81
         }
       ],
       "DownstreamPathTemplate": "/GetOrders?{everything}",
@@ -533,7 +600,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "takefood-storeservice.azurewebsites.net",
-          "Port": 443
+          "Port": 81
         }
       ],
       "DownstreamPathTemplate": "/api/Food/GetFoodViewMobile?{everything}",
@@ -555,8 +622,8 @@
       "SwaggerKey": "authen",
       "DownstreamHostAndPorts": [
         {
-          "Host": "takefood-authentication.azurewebsites.net",
-          "Port": 443
+          "Host": "10.104.0.2",
+          "Port": 81
         }
       ],
       "DownstreamPathTemplate": "/GetAddress",
@@ -709,7 +776,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "takefood-userorderservice.azurewebsites.net",
-          "Port": 443
+          "Port": 81
         }
       ],
       "UpstreamHttpMethod": [ "POST" ],
@@ -723,7 +790,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "takefood-userorderservice.azurewebsites.net",
-          "Port": 443
+          "Port": 81
         }
       ],
       "UpstreamPathTemplate": "/notifysocket",
