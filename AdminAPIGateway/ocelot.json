@@ -138,6 +138,102 @@
         "Uid": "Claims[UId] > value"
       }
     },
+    // Admin service
+    {
+      "UpstreamPathTemplate": "/GetPagingAdmin?{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "https",
+      "SwaggerKey": "authen",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "takefood-authentication.azurewebsites.net",
+          "Port": 443
+        }
+      ],
+      "DownstreamPathTemplate": "/GetPagingAdmin?{everything}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "Admin": "Admin"
+      },
+      "AddHeadersToRequest": {
+        "Uid": "Claims[UId] > value"
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/MakeAdmin?{everything}",
+      "UpstreamHttpMethod": [ "PUT" ],
+      "DownstreamScheme": "https",
+      "SwaggerKey": "authen",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "takefood-authentication.azurewebsites.net",
+          "Port": 443
+        }
+      ],
+      "DownstreamPathTemplate": "/MakeAdmin?{everything}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "Admin": "Admin"
+      },
+      "AddHeadersToRequest": {
+        "Uid": "Claims[UId] > value"
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/RemoveAdmin?{everything}",
+      "UpstreamHttpMethod": [ "DELETE" ],
+      "DownstreamScheme": "https",
+      "SwaggerKey": "authen",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "takefood-authentication.azurewebsites.net",
+          "Port": 443
+        }
+      ],
+      "DownstreamPathTemplate": "/RemoveAdmin?{everything}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "Admin": "Admin"
+      },
+      "AddHeadersToRequest": {
+        "Uid": "Claims[UId] > value"
+      }
+    },
+    "/",
+    "user",
+    "service",
+    {
+      "UpstreamPathTemplate": "/GetPagingUser?{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "https",
+      "SwaggerKey": "authen",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "takefood-authentication.azurewebsites.net",
+          "Port": 443
+        }
+      ],
+      "DownstreamPathTemplate": "/GetPagingUser?{everything}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "Admin": "Admin"
+      },
+      "AddHeadersToRequest": {
+        "Uid": "Claims[UId] > value"
+      }
+    },
     // Buy Book service
     {
       "UpstreamPathTemplate": "/Book/BuyBook",
