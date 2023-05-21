@@ -212,7 +212,7 @@
     {
       "UpstreamPathTemplate": "/GetPagingUser?{everything}",
       "UpstreamHttpMethod": [ "GET" ],
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "SwaggerKey": "authen",
       "DownstreamHostAndPorts": [
         {
@@ -235,7 +235,7 @@
     {
       "UpstreamPathTemplate": "/ChangeUserStatus?{everything}",
       "UpstreamHttpMethod": [ "PUT" ],
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "SwaggerKey": "authen",
       "DownstreamHostAndPorts": [
         {
@@ -258,7 +258,7 @@
     {
       "UpstreamPathTemplate": "/DeleteUser?{everything}",
       "UpstreamHttpMethod": [ "DELETE" ],
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "SwaggerKey": "authen",
       "DownstreamHostAndPorts": [
         {
@@ -281,7 +281,7 @@
     {
       "UpstreamPathTemplate": "/GetNewsUser",
       "UpstreamHttpMethod": [ "GET" ],
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "SwaggerKey": "authen",
       "DownstreamHostAndPorts": [
         {
@@ -314,52 +314,6 @@
         }
       ],
       "DownstreamPathTemplate": "/Book/BuyBook",
-      "AuthenticationOptions": {
-        "AuthenticationProviderKey": "Bearer",
-        "AllowedScopes": []
-      },
-      "RouteClaimsRequirement": {
-        "User": "User"
-      },
-      "AddHeadersToRequest": {
-        "Uid": "Claims[UId] > value"
-      }
-    },
-    {
-      "UpstreamPathTemplate": "/Book/BuyBookConfirm?{everything}",
-      "UpstreamHttpMethod": [ "Get" ],
-      "DownstreamScheme": "http",
-      "SwaggerKey": "BookService",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "10.104.0.2",
-          "Port": 85
-        }
-      ],
-      "DownstreamPathTemplate": "/Book/BuyBookConfirm?{everything}",
-      "AuthenticationOptions": {
-        "AuthenticationProviderKey": "Bearer",
-        "AllowedScopes": []
-      },
-      "RouteClaimsRequirement": {
-        "User": "User"
-      },
-      "AddHeadersToRequest": {
-        "Uid": "Claims[UId] > value"
-      }
-    },
-    {
-      "UpstreamPathTemplate": "/Book/BuyBookCancel?{everything}",
-      "UpstreamHttpMethod": [ "Get" ],
-      "DownstreamScheme": "http",
-      "SwaggerKey": "BookService",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "10.104.0.2",
-          "Port": 85
-        }
-      ],
-      "DownstreamPathTemplate": "/Book/BuyBookCancel?{everything}",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": []
