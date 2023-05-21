@@ -1018,7 +1018,7 @@
     },
     // Statistic
     {
-      "UpstreamPathTemplate": "/Statistic/GetStatisticCards?{everything}",
+      "UpstreamPathTemplate": "/Statistic/GetStatisticCardsById?{everything}",
       "UpstreamHttpMethod": [ "Get" ],
       "DownstreamScheme": "http",
       "SwaggerKey": "BookService",
@@ -1028,20 +1028,20 @@
           "Port": 83
         }
       ],
-      "DownstreamPathTemplate": "/Statistic/GetStatisticCards?{everything}",
+      "DownstreamPathTemplate": "/Statistic/GetStatisticCardsById?{everything}",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": []
       },
       "RouteClaimsRequirement": {
-        "User": "User"
+        "User": "Admin"
       },
       "AddHeadersToRequest": {
         "Uid": "Claims[UId] > value"
       }
     },
     {
-      "UpstreamPathTemplate": "/Statistic/GetStatisticChart?{everything}",
+      "UpstreamPathTemplate": "/Statistic/GetStatisticChartByUId?{everything}",
       "UpstreamHttpMethod": [ "Get" ],
       "DownstreamScheme": "http",
       "SwaggerKey": "BookService",
@@ -1051,20 +1051,20 @@
           "Port": 83
         }
       ],
-      "DownstreamPathTemplate": "/Statistic/GetStatisticChart?{everything}",
+      "DownstreamPathTemplate": "/Statistic/GetStatisticChartByUId?{everything}",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": []
       },
       "RouteClaimsRequirement": {
-        "User": "User"
+        "User": "Admin"
       },
       "AddHeadersToRequest": {
         "Uid": "Claims[UId] > value"
       }
     },
     {
-      "UpstreamPathTemplate": "/Statistic/GetStatisticData?{everything}",
+      "UpstreamPathTemplate": "/Statistic/GetStatisticDataByUId?{everything}",
       "UpstreamHttpMethod": [ "Get" ],
       "DownstreamScheme": "http",
       "SwaggerKey": "BookService",
@@ -1074,20 +1074,20 @@
           "Port": 83
         }
       ],
-      "DownstreamPathTemplate": "/Statistic/GetStatisticData?{everything}",
+      "DownstreamPathTemplate": "/Statistic/GetStatisticDataByUId?{everything}",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": []
       },
       "RouteClaimsRequirement": {
-        "User": "User"
+        "User": "Admin"
       },
       "AddHeadersToRequest": {
         "Uid": "Claims[UId] > value"
       }
     },
     {
-      "UpstreamPathTemplate": "/Statistic/GetStatisticRevenueYear?{everything}",
+      "UpstreamPathTemplate": "/Statistic/GetStatisticRevenueYearByUId?{everything}",
       "UpstreamHttpMethod": [ "Get" ],
       "DownstreamScheme": "http",
       "SwaggerKey": "BookService",
@@ -1097,13 +1097,13 @@
           "Port": 83
         }
       ],
-      "DownstreamPathTemplate": "/Statistic/GetStatisticRevenueYear?{everything}",
+      "DownstreamPathTemplate": "/Statistic/GetStatisticRevenueYearByUId?{everything}",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": []
       },
       "RouteClaimsRequirement": {
-        "User": "User"
+        "User": "Admin"
       },
       "AddHeadersToRequest": {
         "Uid": "Claims[UId] > value"
