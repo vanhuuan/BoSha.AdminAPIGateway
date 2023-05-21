@@ -233,6 +233,29 @@
       }
     },
     {
+      "UpstreamPathTemplate": "/GetUserByID?{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "http",
+      "SwaggerKey": "authen",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "10.104.0.2",
+          "Port": 81
+        }
+      ],
+      "DownstreamPathTemplate": "/GetUserByID?{everything}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "Admin": "Admin"
+      },
+      "AddHeadersToRequest": {
+        "Uid": "Claims[UId] > value"
+      }
+    },
+    {
       "UpstreamPathTemplate": "/ChangeUserStatus?{everything}",
       "UpstreamHttpMethod": [ "PUT" ],
       "DownstreamScheme": "http",
