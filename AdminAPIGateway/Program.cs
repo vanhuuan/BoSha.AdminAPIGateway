@@ -12,9 +12,10 @@ builder.Configuration.AddJsonFile("appsettings.json", optional: true, reloadOnCh
 builder.Services.AddOcelot(builder.Configuration);
 builder.Services.AddSwaggerForOcelot(builder.Configuration);
 builder.Services.AddControllers();
-string[] urls = new string[2];
+string[] urls = new string[3];
 urls[0] = "http://localhost:3000";
-urls[1] = "https://bosha-4df95.web.app";
+urls[1] = "https://boshaadmin.web.app";
+urls[2] = "http://localhost:3001";
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll",
