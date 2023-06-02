@@ -570,29 +570,6 @@
       }
     },
     {
-      "UpstreamPathTemplate": "/api/Food/GetFoodViewMobile?{everything}",
-      "UpstreamHttpMethod": [ "GET" ],
-      "DownstreamScheme": "https",
-      "SwaggerKey": "store",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "takefood-storeservice.azurewebsites.net",
-          "Port": 81
-        }
-      ],
-      "DownstreamPathTemplate": "/api/Food/GetFoodViewMobile?{everything}",
-      "AuthenticationOptions": {
-        "AuthenticationProviderKey": "Bearer",
-        "AllowedScopes": []
-      },
-      "RouteClaimsRequirement": {
-        "User": "User"
-      },
-      "AddHeadersToRequest": {
-        "Uid": "Claims[UId] > value"
-      }
-    },
-    {
       "UpstreamPathTemplate": "/GetAddress",
       "UpstreamHttpMethod": [ "GET" ],
       "DownstreamScheme": "https",
@@ -1125,7 +1102,7 @@
         "AllowedScopes": []
       },
       "RouteClaimsRequirement": {
-        "User": "User"
+        "Admin": "Admin"
       },
       "AddHeadersToRequest": {
         "Uid": "Claims[UId] > value"
@@ -1148,7 +1125,7 @@
         "AllowedScopes": []
       },
       "RouteClaimsRequirement": {
-        "User": "User"
+        "Admin": "Admin"
       },
       "AddHeadersToRequest": {
         "Uid": "Claims[UId] > value"
@@ -1172,7 +1149,7 @@
         "AllowedScopes": []
       },
       "RouteClaimsRequirement": {
-        "User": "User"
+        "Admin": "Admin"
       },
       "AddHeadersToRequest": {
         "Uid": "Claims[UId] > value"
@@ -1195,7 +1172,7 @@
         "AllowedScopes": []
       },
       "RouteClaimsRequirement": {
-        "User": "User"
+        "Admin": "Admin"
       },
       "AddHeadersToRequest": {
         "Uid": "Claims[UId] > value"
@@ -1284,6 +1261,30 @@
         }
       ],
       "DownstreamPathTemplate": "/Statistic/GetStatisticRevenueYearByUId?{everything}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "Admin": "Admin"
+      },
+      "AddHeadersToRequest": {
+        "Uid": "Claims[UId] > value"
+      }
+    },
+    // Book
+    {
+      "UpstreamPathTemplate": "/Book/BlockBook?{everything}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamScheme": "http",
+      "SwaggerKey": "BookService",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "10.104.0.2",
+          "Port": 83
+        }
+      ],
+      "DownstreamPathTemplate": "/Book/BlockBook?{everything}",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": []
