@@ -689,6 +689,29 @@
       }
     },
     {
+      "UpstreamPathTemplate": "/Book/Review/Delete?{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "http",
+      "SwaggerKey": "UserBook",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "10.104.0.2",
+          "Port": 85
+        }
+      ],
+      "DownstreamPathTemplate": "/Book/Review/Delete?{everything}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "User": "User"
+      },
+      "AddHeadersToRequest": {
+        "Uid": "Claims[UId] > value"
+      }
+    },
+    {
       "UpstreamPathTemplate": "/Comment/GetUserComment?{everything}",
       "UpstreamHttpMethod": [ "GET" ],
       "DownstreamScheme": "http",
@@ -700,6 +723,29 @@
         }
       ],
       "DownstreamPathTemplate": "/Comment/GetUserComment?{everything}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "User": "User"
+      },
+      "AddHeadersToRequest": {
+        "Uid": "Claims[UId] > value"
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/Book/Comment/Delete?{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "http",
+      "SwaggerKey": "UserBook",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "10.104.0.2",
+          "Port": 85
+        }
+      ],
+      "DownstreamPathTemplate": "/Book/Comment/Delete?{everything}",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": []
