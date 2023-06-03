@@ -667,7 +667,7 @@
     },
     {
       "UpstreamPathTemplate": "/Book/Review/Delete?{everything}",
-      "UpstreamHttpMethod": [ "GET" ],
+      "UpstreamHttpMethod": [ "DELETE" ],
       "DownstreamScheme": "http",
       "SwaggerKey": "UserBook",
       "DownstreamHostAndPorts": [
@@ -713,7 +713,7 @@
     },
     {
       "UpstreamPathTemplate": "/Book/Comment/Delete?{everything}",
-      "UpstreamHttpMethod": [ "GET" ],
+      "UpstreamHttpMethod": [ "DELETE" ],
       "DownstreamScheme": "http",
       "SwaggerKey": "UserBook",
       "DownstreamHostAndPorts": [
