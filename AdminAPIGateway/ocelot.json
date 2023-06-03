@@ -673,7 +673,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "10.104.0.2",
-          "Port": 85
+          "Port": 83
         }
       ],
       "DownstreamPathTemplate": "/Book/Review/Delete?{everything}",
@@ -682,7 +682,7 @@
         "AllowedScopes": []
       },
       "RouteClaimsRequirement": {
-        "User": "User"
+        "Admin": "Admin"
       },
       "AddHeadersToRequest": {
         "Uid": "Claims[UId] > value"
@@ -719,7 +719,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "10.104.0.2",
-          "Port": 85
+          "Port": 83
         }
       ],
       "DownstreamPathTemplate": "/Book/Comment/Delete?{everything}",
@@ -728,7 +728,7 @@
         "AllowedScopes": []
       },
       "RouteClaimsRequirement": {
-        "User": "User"
+        "Admin": "Admin"
       },
       "AddHeadersToRequest": {
         "Uid": "Claims[UId] > value"
