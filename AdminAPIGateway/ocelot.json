@@ -667,7 +667,7 @@
     },
     {
       "UpstreamPathTemplate": "/Book/Review/Delete?{everything}",
-      "UpstreamHttpMethod": [ "GET" ],
+      "UpstreamHttpMethod": [ "DELETE" ],
       "DownstreamScheme": "http",
       "SwaggerKey": "UserBook",
       "DownstreamHostAndPorts": [
@@ -682,7 +682,7 @@
         "AllowedScopes": []
       },
       "RouteClaimsRequirement": {
-        "User": "User"
+        "Admin": "Admin"
       },
       "AddHeadersToRequest": {
         "Uid": "Claims[UId] > value"
@@ -713,7 +713,7 @@
     },
     {
       "UpstreamPathTemplate": "/Book/Comment/Delete?{everything}",
-      "UpstreamHttpMethod": [ "GET" ],
+      "UpstreamHttpMethod": [ "DELETE" ],
       "DownstreamScheme": "http",
       "SwaggerKey": "UserBook",
       "DownstreamHostAndPorts": [
@@ -728,7 +728,7 @@
         "AllowedScopes": []
       },
       "RouteClaimsRequirement": {
-        "User": "User"
+        "Admin": "Admin"
       },
       "AddHeadersToRequest": {
         "Uid": "Claims[UId] > value"
