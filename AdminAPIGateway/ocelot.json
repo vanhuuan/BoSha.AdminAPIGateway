@@ -1084,19 +1084,7 @@
           "Port": 83
         }
       ],
-      "DownstreamPathTemplate": "/Chapter/ChapterDetail?{everything}"
-    },
-    {
-      "UpstreamPathTemplate": "/Chapter/AddChapter",
-      "UpstreamHttpMethod": [ "POST" ],
-      "DownstreamScheme": "http",
-      "SwaggerKey": "UserBook",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "10.104.0.2",
-          "Port": 83
-        }
-      ],
+      "DownstreamPathTemplate": "/Chapter/ChapterDetail?{everything}",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": []
@@ -1106,33 +1094,8 @@
       },
       "AddHeadersToRequest": {
         "Uid": "Claims[UId] > value"
-      },
-      "DownstreamPathTemplate": "/Chapter/AddChapter"
+      }
     },
-    {
-      "UpstreamPathTemplate": "/Chapter/UpdateChapter",
-      "UpstreamHttpMethod": [ "PUT" ],
-      "DownstreamScheme": "http",
-      "SwaggerKey": "UserBook",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "10.104.0.2",
-          "Port": 83
-        }
-      ],
-      "AuthenticationOptions": {
-        "AuthenticationProviderKey": "Bearer",
-        "AllowedScopes": []
-      },
-      "RouteClaimsRequirement": {
-        "Admin": "Admin"
-      },
-      "AddHeadersToRequest": {
-        "Uid": "Claims[UId] > value"
-      },
-      "DownstreamPathTemplate": "/Chapter/UpdateChapter"
-    },
-
     {
       "UpstreamPathTemplate": "/Chapter/GetNextIndex?{everything}",
       "UpstreamHttpMethod": [ "GET" ],
