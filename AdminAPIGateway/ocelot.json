@@ -1081,7 +1081,17 @@
           "Port": 83
         }
       ],
-      "DownstreamPathTemplate": "/Chapter/Chapters?{everything}"
+      "DownstreamPathTemplate": "/Chapter/Chapters?{everything}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "Admin": "Admin"
+      },
+      "AddHeadersToRequest": {
+        "Uid": "Claims[UId] > value"
+      }
     },
     {
       "UpstreamPathTemplate": "/Chapter/ChapterDetail?{everything}",
