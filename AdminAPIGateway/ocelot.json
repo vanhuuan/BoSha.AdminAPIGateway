@@ -921,13 +921,23 @@
       "UpstreamPathTemplate": "/Books?{everything}",
       "UpstreamHttpMethod": [ "GET" ],
       "DownstreamScheme": "http",
-      "SwaggerKey": "BookService",
+      "SwaggerKey": "UserBookService",
       "DownstreamHostAndPorts": [
         {
           "Host": "10.104.0.2",
-          "Port": 85
+          "Port": 83
         }
       ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "Admin": "Admin"
+      },
+      "AddHeadersToRequest": {
+        "Uid": "Claims[UId] > value"
+      },
       "DownstreamPathTemplate": "/Books?{everything}"
     },
     // Category
