@@ -165,7 +165,7 @@
     {
       "UpstreamPathTemplate": "/MakeAdmin?{everything}",
       "UpstreamHttpMethod": [ "PUT" ],
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "SwaggerKey": "authen",
       "DownstreamHostAndPorts": [
         {
