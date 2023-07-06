@@ -4,9 +4,20 @@ using Ocelot.Middleware;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Configuration.SetBasePath(builder.Environment.ContentRootPath)
-    .AddJsonFile("ocelot.json", optional: false, reloadOnChange: true)
-    .AddEnvironmentVariables();
+string envName = builder.Environment.EnvironmentName;
+if(envName == "Development" || envName == "Production")
+{
+    builder.Configuration.SetBasePath(builder.Environment.ContentRootPath)
+        .AddJsonFile("ocelot.json", optional: false, reloadOnChange: true)
+        .AddEnvironmentVariables();
+}
+else
+{
+    builder.Configuration.SetBasePath(builder.Environment.ContentRootPath)
+        .AddJsonFile("ocelot-local.json", optional: false, reloadOnChange: true)
+        .AddEnvironmentVariables();
+}
+
 builder.Configuration.AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
     .AddEnvironmentVariables();
 builder.Services.AddOcelot(builder.Configuration);

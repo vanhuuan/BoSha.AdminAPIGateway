@@ -8,8 +8,8 @@
       "SwaggerKey": "authen",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.104.0.2",
-          "Port": 81
+          "Host": "localhost",
+          "Port": 5284
         }
       ],
       "DownstreamPathTemplate": "/Authen/SignIn"
@@ -21,8 +21,8 @@
       "SwaggerKey": "authen",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.104.0.2",
-          "Port": 81
+          "Host": "localhost",
+          "Port": 5284
         }
       ],
       "DownstreamPathTemplate": "/Authen/SignInGoogle"
@@ -34,8 +34,8 @@
       "SwaggerKey": "authen",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.104.0.2",
-          "Port": 81
+          "Host": "localhost",
+          "Port": 5284
         }
       ],
       "DownstreamPathTemplate": "/Authen/SignUp/{everything}"
@@ -47,8 +47,8 @@
       "SwaggerKey": "authen",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.104.0.2",
-          "Port": 81
+          "Host": "localhost",
+          "Port": 5284
         }
       ],
       "DownstreamPathTemplate": "/Authen/SignUpGoogle"
@@ -60,8 +60,8 @@
       "SwaggerKey": "authen",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.104.0.2",
-          "Port": 81
+          "Host": "localhost",
+          "Port": 5284
         }
       ],
       "DownstreamPathTemplate": "/Authen/Active?{everything}"
@@ -73,8 +73,8 @@
       "SwaggerKey": "authen",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.104.0.2",
-          "Port": 81
+          "Host": "localhost",
+          "Port": 5284
         }
       ],
       "DownstreamPathTemplate": "/Authen/ForgetPass?{everything}"
@@ -86,8 +86,8 @@
       "SwaggerKey": "authen",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.104.0.2",
-          "Port": 81
+          "Host": "localhost",
+          "Port": 5284
         }
       ],
       "DownstreamPathTemplate": "/Authen/RenewPassword"
@@ -99,8 +99,8 @@
       "SwaggerKey": "authen",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.104.0.2",
-          "Port": 81
+          "Host": "localhost",
+          "Port": 5284
         }
       ],
       "DownstreamPathTemplate": "/GetUserInfo",
@@ -122,8 +122,8 @@
       "SwaggerKey": "authen",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.104.0.2",
-          "Port": 81
+          "Host": "localhost",
+          "Port": 5284
         }
       ],
       "DownstreamPathTemplate": "/UpdateInfo",
@@ -146,8 +146,8 @@
       "SwaggerKey": "authen",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.104.0.2",
-          "Port": 81
+          "Host": "localhost",
+          "Port": 5284
         }
       ],
       "DownstreamPathTemplate": "/GetPagingAdmin?{everything}",
@@ -169,8 +169,8 @@
       "SwaggerKey": "authen",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.104.0.2",
-          "Port": 81
+          "Host": "localhost",
+          "Port": 5284
         }
       ],
       "DownstreamPathTemplate": "/MakeAdmin?{everything}",
@@ -192,8 +192,8 @@
       "SwaggerKey": "authen",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.104.0.2",
-          "Port": 81
+          "Host": "localhost",
+          "Port": 5284
         }
       ],
       "DownstreamPathTemplate": "/RemoveAdmin?{everything}",
@@ -216,8 +216,8 @@
       "SwaggerKey": "authen",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.104.0.2",
-          "Port": 81
+          "Host": "localhost",
+          "Port": 5284
         }
       ],
       "DownstreamPathTemplate": "/GetPagingUser?{everything}",
@@ -239,8 +239,8 @@
       "SwaggerKey": "authen",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.104.0.2",
-          "Port": 81
+          "Host": "localhost",
+          "Port": 5284
         }
       ],
       "DownstreamPathTemplate": "/GetUserByID?{everything}",
@@ -262,8 +262,8 @@
       "SwaggerKey": "authen",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.104.0.2",
-          "Port": 81
+          "Host": "localhost",
+          "Port": 5284
         }
       ],
       "DownstreamPathTemplate": "/ChangeUserStatus?{everything}",
@@ -285,8 +285,8 @@
       "SwaggerKey": "authen",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.104.0.2",
-          "Port": 81
+          "Host": "localhost",
+          "Port": 5284
         }
       ],
       "DownstreamPathTemplate": "/DeleteUser?{everything}",
@@ -308,8 +308,8 @@
       "SwaggerKey": "authen",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.104.0.2",
-          "Port": 81
+          "Host": "localhost",
+          "Port": 5284
         }
       ],
       "DownstreamPathTemplate": "/GetNewsUser",
@@ -332,7 +332,7 @@
       "SwaggerKey": "BookService",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.104.0.2",
+          "Host": "localhost",
           "Port": 85
         }
       ],
@@ -355,7 +355,7 @@
       "SwaggerKey": "BookService",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.104.0.2",
+          "Host": "localhost",
           "Port": 85
         }
       ],
@@ -378,7 +378,7 @@
       "SwaggerKey": "BookService",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.104.0.2",
+          "Host": "localhost",
           "Port": 85
         }
       ],
@@ -401,7 +401,7 @@
       "SwaggerKey": "BookService",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.104.0.2",
+          "Host": "localhost",
           "Port": 85
         }
       ],
@@ -414,7 +414,7 @@
       "SwaggerKey": "BookService",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.104.0.2",
+          "Host": "localhost",
           "Port": 85
         }
       ],
@@ -438,7 +438,7 @@
       "SwaggerKey": "BookService",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.104.0.2",
+          "Host": "localhost",
           "Port": 85
         }
       ],
@@ -461,11 +461,126 @@
       "SwaggerKey": "BookService",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.104.0.2",
+          "Host": "localhost",
           "Port": 85
         }
       ],
       "DownstreamPathTemplate": "/Book/GetLikeBook?{everything}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "User": "User"
+      },
+      "AddHeadersToRequest": {
+        "Uid": "Claims[UId] > value"
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/CreateOrder",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamScheme": "https",
+      "SwaggerKey": "userorder",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "takefood-userorderservice.azurewebsites.net",
+          "Port": 5284
+        }
+      ],
+      "DownstreamPathTemplate": "/CreateOrder",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "User": "User"
+      },
+      "AddHeadersToRequest": {
+        "Uid": "Claims[UId] > value"
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/GetVoucher?{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "https",
+      "SwaggerKey": "voucher",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "takefood-voucherservice.azurewebsites.net",
+          "Port": 5284
+        }
+      ],
+      "DownstreamPathTemplate": "/GetVoucher?{everything}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "User": "User"
+      },
+      "AddHeadersToRequest": {
+        "Uid": "Claims[UId] > value"
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/GetOrderdetail?{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "https",
+      "SwaggerKey": "userorder",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "takefood-userorderservice.azurewebsites.net",
+          "Port": 5284
+        }
+      ],
+      "DownstreamPathTemplate": "/GetOrderdetail?{everything}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "User": "User"
+      },
+      "AddHeadersToRequest": {
+        "Uid": "Claims[UId] > value"
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/GetOrders?{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "https",
+      "SwaggerKey": "userorder",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "takefood-userorderservice.azurewebsites.net",
+          "Port": 5284
+        }
+      ],
+      "DownstreamPathTemplate": "/GetOrders?{everything}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "User": "User"
+      },
+      "AddHeadersToRequest": {
+        "Uid": "Claims[UId] > value"
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/GetAddress",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "https",
+      "SwaggerKey": "authen",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5284
+        }
+      ],
+      "DownstreamPathTemplate": "/GetAddress",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": []
@@ -484,8 +599,8 @@
       "SwaggerKey": "authen",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.104.0.2",
-          "Port": 81
+          "Host": "localhost",
+          "Port": 5284
         }
       ],
       "DownstreamPathTemplate": "/Authen/GetAccessToken?{everything}"
@@ -498,7 +613,7 @@
       "SwaggerKey": "review",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.104.0.2",
+          "Host": "localhost",
           "Port": 85
         }
       ],
@@ -521,7 +636,7 @@
       "SwaggerKey": "BookService",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.104.0.2",
+          "Host": "localhost",
           "Port": 85
         }
       ],
@@ -534,8 +649,8 @@
       "SwaggerKey": "UserBook",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.104.0.2",
-          "Port": 83
+          "Host": "localhost",
+          "Port": 5007
         }
       ],
       "DownstreamPathTemplate": "/Review/GetUserReview?{everything}",
@@ -557,7 +672,7 @@
       "SwaggerKey": "UserBook",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.104.0.2",
+          "Host": "localhost",
           "Port": 85
         }
       ],
@@ -580,8 +695,8 @@
       "SwaggerKey": "UserBook",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.104.0.2",
-          "Port": 83
+          "Host": "localhost",
+          "Port": 5007
         }
       ],
       "DownstreamPathTemplate": "/Comment/GetUserComment?{everything}",
@@ -603,7 +718,7 @@
       "SwaggerKey": "UserBook",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.104.0.2",
+          "Host": "localhost",
           "Port": 85
         }
       ],
@@ -626,7 +741,7 @@
       "SwaggerKey": "BookService",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.104.0.2",
+          "Host": "localhost",
           "Port": 85
         }
       ],
@@ -639,7 +754,7 @@
       "SwaggerKey": "BookService",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.104.0.2",
+          "Host": "localhost",
           "Port": 85
         }
       ],
@@ -661,7 +776,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "takefood-userorderservice.azurewebsites.net",
-          "Port": 81
+          "Port": 5284
         }
       ],
       "UpstreamHttpMethod": [ "POST" ],
@@ -675,7 +790,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "takefood-userorderservice.azurewebsites.net",
-          "Port": 81
+          "Port": 5284
         }
       ],
       "UpstreamPathTemplate": "/notifysocket",
@@ -688,8 +803,8 @@
       "SwaggerKey": "UserBook",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.104.0.2",
-          "Port": 83
+          "Host": "localhost",
+          "Port": 5007
         }
       ],
       "DownstreamPathTemplate": "/NotifyPay?{everything}"
@@ -701,8 +816,8 @@
       "SwaggerKey": "UserBook",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.104.0.2",
-          "Port": 83
+          "Host": "localhost",
+          "Port": 5007
         }
       ],
       "DownstreamPathTemplate": "/NotifyCancel?{everything}"
@@ -714,7 +829,7 @@
       "SwaggerKey": "BookService",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.104.0.2",
+          "Host": "localhost",
           "Port": 85
         }
       ],
@@ -727,8 +842,8 @@
       "SwaggerKey": "UserBook",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.104.0.2",
-          "Port": 83
+          "Host": "localhost",
+          "Port": 5007
         }
       ],
       "AuthenticationOptions": {
@@ -750,8 +865,8 @@
       "SwaggerKey": "UserBook",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.104.0.2",
-          "Port": 83
+          "Host": "localhost",
+          "Port": 5007
         }
       ],
       "AuthenticationOptions": {
@@ -773,8 +888,8 @@
       "SwaggerKey": "UserBook",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.104.0.2",
-          "Port": 83
+          "Host": "localhost",
+          "Port": 5007
         }
       ],
       "AuthenticationOptions": {
@@ -796,7 +911,7 @@
       "SwaggerKey": "BookService",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.104.0.2",
+          "Host": "localhost",
           "Port": 85
         }
       ],
@@ -809,8 +924,8 @@
       "SwaggerKey": "UserBookService",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.104.0.2",
-          "Port": 83
+          "Host": "localhost",
+          "Port": 5007
         }
       ],
       "AuthenticationOptions": {
@@ -833,8 +948,8 @@
       "SwaggerKey": "UserBook",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.104.0.2",
-          "Port": 83
+          "Host": "localhost",
+          "Port": 5007
         }
       ],
       "DownstreamPathTemplate": "/categories"
@@ -846,8 +961,8 @@
       "SwaggerKey": "UserBook",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.104.0.2",
-          "Port": 83
+          "Host": "localhost",
+          "Port": 5007
         }
       ],
       "DownstreamPathTemplate": "/Category/Paging?{everything}",
@@ -869,8 +984,8 @@
       "SwaggerKey": "UserBook",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.104.0.2",
-          "Port": 83
+          "Host": "localhost",
+          "Port": 5007
         }
       ],
       "DownstreamPathTemplate": "/Category?{everything}",
@@ -892,8 +1007,8 @@
       "SwaggerKey": "UserBook",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.104.0.2",
-          "Port": 83
+          "Host": "localhost",
+          "Port": 5007
         }
       ],
       "DownstreamPathTemplate": "/Category/Update",
@@ -915,8 +1030,8 @@
       "SwaggerKey": "UserBook",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.104.0.2",
-          "Port": 83
+          "Host": "localhost",
+          "Port": 5007
         }
       ],
       "DownstreamPathTemplate": "/Category/Create",
@@ -938,8 +1053,8 @@
       "SwaggerKey": "UserBook",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.104.0.2",
-          "Port": 83
+          "Host": "localhost",
+          "Port": 5007
         }
       ],
       "DownstreamPathTemplate": "/Category/Delete?{everything}",
@@ -962,8 +1077,8 @@
       "SwaggerKey": "UserBook",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.104.0.2",
-          "Port": 83
+          "Host": "localhost",
+          "Port": 5007
         }
       ],
       "DownstreamPathTemplate": "/Chapter/Chapters?{everything}",
@@ -985,7 +1100,7 @@
       "SwaggerKey": "UserBook",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.104.0.2",
+          "Host": "localhost",
           "Port": 85
         }
       ],
@@ -1008,8 +1123,8 @@
       "SwaggerKey": "UserBook",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.104.0.2",
-          "Port": 83
+          "Host": "localhost",
+          "Port": 5007
         }
       ],
       "AuthenticationOptions": {
@@ -1031,8 +1146,8 @@
       "SwaggerKey": "UserBook",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.104.0.2",
-          "Port": 83
+          "Host": "localhost",
+          "Port": 5007
         }
       ],
       "AuthenticationOptions": {
@@ -1055,8 +1170,8 @@
       "SwaggerKey": "BookService",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.104.0.2",
-          "Port": 83
+          "Host": "localhost",
+          "Port": 5007
         }
       ],
       "DownstreamPathTemplate": "/Statistic/GetStatisticCardsById?{everything}",
@@ -1078,8 +1193,8 @@
       "SwaggerKey": "BookService",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.104.0.2",
-          "Port": 83
+          "Host": "localhost",
+          "Port": 5007
         }
       ],
       "DownstreamPathTemplate": "/Statistic/GetStatisticChartByUId?{everything}",
@@ -1101,8 +1216,8 @@
       "SwaggerKey": "BookService",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.104.0.2",
-          "Port": 83
+          "Host": "localhost",
+          "Port": 5007
         }
       ],
       "DownstreamPathTemplate": "/Statistic/GetStatisticDataByUId?{everything}",
@@ -1124,8 +1239,8 @@
       "SwaggerKey": "BookService",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.104.0.2",
-          "Port": 83
+          "Host": "localhost",
+          "Port": 5007
         }
       ],
       "DownstreamPathTemplate": "/Statistic/GetStatisticRevenueYearByUId?{everything}",
@@ -1148,8 +1263,8 @@
       "SwaggerKey": "BookService",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.104.0.2",
-          "Port": 83
+          "Host": "localhost",
+          "Port": 5007
         }
       ],
       "DownstreamPathTemplate": "/Book/BlockBook?{everything}",
@@ -1166,7 +1281,7 @@
     }
   ],
   "GlobalConfiguration": {
-    "BaseUrl": "http://10.104.0.2:7239"
+    "BaseUrl": "http://localhost:7239"
   },
   "SwaggerEndPoints": [
     {
@@ -1176,7 +1291,7 @@
         {
           "Name": "BoSha.AuthenticationService",
           "Version": "1.0",
-          "Url": "http://10.104.0.2:81/swagger/v1/swagger.json"
+          "Url": "http://localhost:5284/swagger/v1/swagger.json"
         }
       ]
     },
@@ -1187,7 +1302,7 @@
         {
           "Name": "BoSHa.BookService",
           "Version": "1.0",
-          "Url": "http://10.104.0.2:85/swagger/v1/swagger.json"
+          "Url": "http://localhost:85/swagger/v1/swagger.json"
         }
       ]
     },
@@ -1198,7 +1313,7 @@
         {
           "Name": "BoSha.UserBookService",
           "Version": "1.0",
-          "Url": "http://10.104.0.2:83/swagger/v1/swagger.json"
+          "Url": "http://localhost:5007/swagger/v1/swagger.json"
         }
       ]
     }
