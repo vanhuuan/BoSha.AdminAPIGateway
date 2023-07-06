@@ -333,7 +333,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 85
+          "Port": 5010
         }
       ],
       "DownstreamPathTemplate": "/Book/BuyBook",
@@ -356,7 +356,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 85
+          "Port": 5010
         }
       ],
       "DownstreamPathTemplate": "/Book/GetBuyBookPaging?{everything}",
@@ -379,7 +379,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 85
+          "Port": 5010
         }
       ],
       "DownstreamPathTemplate": "/Book/GetCheckOut?{everything}",
@@ -402,7 +402,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 85
+          "Port": 5010
         }
       ],
       "DownstreamPathTemplate": "/IPN?{everything}"
@@ -415,7 +415,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 85
+          "Port": 5010
         }
       ],
       "DownstreamPathTemplate": "/Book/GetBuyBookStatus?{everything}",
@@ -439,7 +439,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 85
+          "Port": 5010
         }
       ],
       "DownstreamPathTemplate": "/Book/LikeBook?{everything}",
@@ -462,7 +462,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 85
+          "Port": 5010
         }
       ],
       "DownstreamPathTemplate": "/Book/GetLikeBook?{everything}",
@@ -614,7 +614,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 85
+          "Port": 5010
         }
       ],
       "DownstreamPathTemplate": "/Book/Review",
@@ -637,7 +637,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 85
+          "Port": 5010
         }
       ],
       "DownstreamPathTemplate": "/Book/Review?{everything}"
@@ -673,7 +673,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 85
+          "Port": 5010
         }
       ],
       "DownstreamPathTemplate": "/Book/Review/Delete?{everything}",
@@ -719,7 +719,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 85
+          "Port": 5010
         }
       ],
       "DownstreamPathTemplate": "/Book/Comment/Delete?{everything}",
@@ -742,7 +742,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 85
+          "Port": 5010
         }
       ],
       "DownstreamPathTemplate": "/Book/Comment?{everything}"
@@ -755,7 +755,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 85
+          "Port": 5010
         }
       ],
       "DownstreamPathTemplate": "/Book/Comment",
@@ -830,7 +830,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 85
+          "Port": 5010
         }
       ],
       "DownstreamPathTemplate": "/Book/BuyBook/Webhook/PayPal"
@@ -912,7 +912,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 85
+          "Port": 5010
         }
       ],
       "DownstreamPathTemplate": "/Book?{everything}"
@@ -1101,7 +1101,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 85
+          "Port": 5010
         }
       ],
       "DownstreamPathTemplate": "/Chapter/ChapterDetail?{everything}",
@@ -1302,7 +1302,7 @@
         {
           "Name": "BoSHa.BookService",
           "Version": "1.0",
-          "Url": "http://localhost:85/swagger/v1/swagger.json"
+          "Url": "http://localhost:5010/swagger/v1/swagger.json"
         }
       ]
     },
