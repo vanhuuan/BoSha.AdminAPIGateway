@@ -1291,7 +1291,7 @@
         {
           "Name": "BoSha.AuthenticationService",
           "Version": "1.0",
-          "Url": "http://localhost:5284/swagger/v1/swagger.json"
+          "Url": "https://localhost:7135/swagger/v1/swagger.json"
         }
       ]
     },
@@ -1302,7 +1302,7 @@
         {
           "Name": "BoSHa.BookService",
           "Version": "1.0",
-          "Url": "http://localhost:5010/swagger/v1/swagger.json"
+          "Url": "https://localhost:7010/swagger/v1/swagger.json"
         }
       ]
     },
@@ -1313,7 +1313,7 @@
         {
           "Name": "BoSha.UserBookService",
           "Version": "1.0",
-          "Url": "http://localhost:5007/swagger/v1/swagger.json"
+          "Url": "https://localhost:7266/swagger/v1/swagger.json"
         }
       ]
     }
